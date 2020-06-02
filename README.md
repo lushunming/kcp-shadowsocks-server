@@ -14,12 +14,12 @@ A Docker image of KCPTUN + Shadowsocks, auto-generated parameters and
 parameter manually. Just copy following line to your terminal and execute it:
 
 ```bash
-docker build -t kcpss .
+docker build -t lushunming/kcpss:1.0.0 .
 ```
 ```bash
 docker run -t -i --rm --network=host \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  kcpss bootstrap
+  lushunming/kcpss:1.0.0 bootstrap
 ```
 
 The worker container will be setup in seconds. Ports and passwords are generated
