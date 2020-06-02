@@ -14,9 +14,12 @@ A Docker image of KCPTUN + Shadowsocks, auto-generated parameters and
 parameter manually. Just copy following line to your terminal and execute it:
 
 ```bash
+docker build -t kcpss .
+```
+```bash
 docker run -t -i --rm --network=host \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  yaleh/kcp-shadowsocks-server bootstrap
+  kcpss bootstrap
 ```
 
 The worker container will be setup in seconds. Ports and passwords are generated
